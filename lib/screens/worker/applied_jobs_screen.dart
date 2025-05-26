@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/custom_button.dart';
+// ignore: unused_import
 import 'job_details_screen.dart';
 
 class AppliedJobsScreen extends StatelessWidget {
@@ -225,6 +226,7 @@ class AppliedJobsScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
+        // ignore: deprecated_member_use
         color: color.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
       ),
@@ -250,6 +252,7 @@ class AppliedJobsScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
+        // ignore: deprecated_member_use
         color: AppTheme.primaryColor.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
       ),
@@ -260,7 +263,7 @@ class AppliedJobsScreen extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             label,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppTheme.primaryColor,
               fontSize: 12,
             ),

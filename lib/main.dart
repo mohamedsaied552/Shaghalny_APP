@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+// ignore: unused_import
 import 'package:google_fonts/google_fonts.dart';
 import 'screens/splash_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -13,7 +15,9 @@ import 'screens/employer/employer_home_screen.dart';
 import 'screens/employer/post_job_screen.dart';
 import 'theme/app_theme.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const ShoghlanyApp());
 }
 
@@ -38,7 +42,7 @@ class ShoghlanyApp extends StatelessWidget {
         '/forgot-password': (context) => const ForgotPasswordScreen(),
         '/worker-home': (context) => const WorkerHomeScreen(),
         '/worker-profile': (context) => const WorkerProfileScreen(),
-        '/worker-job-details': (context) => JobDetailsScreen(
+        '/worker-job-details': (context) => const JobDetailsScreen(
               jobId: 0, // TODO: Pass actual job ID
             ),
         '/worker-applied-jobs': (context) => const AppliedJobsScreen(),

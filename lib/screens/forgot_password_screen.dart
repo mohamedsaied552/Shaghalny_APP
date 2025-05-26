@@ -47,7 +47,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 40),
-              Icon(
+              const Icon(
                 Icons.lock_reset,
                 size: 80,
                 color: AppTheme.primaryColor,

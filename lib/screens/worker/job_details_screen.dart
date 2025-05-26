@@ -216,7 +216,7 @@ class JobDetailsScreen extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             label,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppTheme.primaryColor,
               fontSize: 12,
             ),
